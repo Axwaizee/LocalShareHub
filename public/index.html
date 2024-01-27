@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>LocalShareHub</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div id="outerTextArea">
+            <div id="innerTextArea">
+                <textarea id="textarea" placeholder="Enter text/code here..."></textarea>
+            </div>
+            <div class="functionbtns">
+                <button id="copybtn">Copy</button>
+                <button id="updatebtn">Update</button>
+                <button id="clearbtn">Clear</button>
+            </div>
+        </div>
+        <div id="outerFileArea">
+
+        </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

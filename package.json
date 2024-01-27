@@ -1,0 +1,32 @@
+{
+  "name": "localsharehub",
+  "version": "1.0.0",
+  "description": "LocalShareHub is an open-source, lightweight server designed for local networks, providing a seamless platform for collaborative text and file sharing. This project empowers users within the same network to connect, collaborate, and share information in real-time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "collaborative",
+    "real-time",
+    "text-sharing",
+    "file-sharing",
+    "local-network",
+    "nodejs",
+    "express",
+    "socket.io",
+    "open-source",
+    "collaboration-hub",
+    "lightweight",
+    "server",
+    "synchronization",
+    "sharing-platform"
+  ],
+  "author": "Axwaizee",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.4"
+  }
+}

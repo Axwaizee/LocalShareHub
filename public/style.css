@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Itim', cursive;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+html,
+body,
+.main-container {
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container>div {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#outerTextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 65vh;
+    min-width: 90vw;
+}
+
+#outerFileArea {
+    min-height: 25vh;
+    min-width: 90vw;
+}
+
+#textarea {
+    border-radius: 10px;
+    height: 50vh;
+    width: 90vw;
+    padding: 1ch;
+    resize: none;
+    color: rgb(214, 214, 214);
+    background-color: rgb(59, 59, 59);
+}
+
+#textarea:focus {
+    outline: none;
+}
+
+.functionbtns>button {
+    background-color: rgb(0, 183, 255);
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid black;
+    height: fit-content;
+    padding: 8px 8px;
+}
+
+#copybtn:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+#updatebtn:hover {
+    background-color: rgb(255, 255, 0);
+}
+
+#clearbtn:hover {
+    background-color: rgb(255, 0, 0);
+}
