@@ -32,5 +32,5 @@ io.on('connection', (socket) => {
 
 
 server.listen(PORT, () => {
-    console.log(`Server running on http://192.168.29.7:${PORT}`);
+    console.log(`Server running on http://localhost:${PORT}`);
 });
