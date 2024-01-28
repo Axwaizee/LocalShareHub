@@ -49,7 +49,7 @@ In the terminal type
 node index.js
 ```
 and there you go.
-You can visit to the webpage via your local IP address or `localhost` and the port you mentioned. Like `IPADDRESS:PORT`: `192.168.0.7:3000` or `localhost:3000`.
+You can visit to the webpage via your local IP address or `localhost` and the port you mentioned. Like `IPADDRESS:PORT` for example: `192.168.0.7:3000` or `localhost:3000`.
 
 # Feel free to contribute to the Repository!
 
