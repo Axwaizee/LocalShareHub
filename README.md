@@ -34,11 +34,12 @@ npm install
 
 ## Adding Port Configuration
 
-After you have set all the required files and folders, add `.env` file to the root (LocalShareHub) directory. In the file give port no. as shown in `.env.sample` file. Make sure the port you mention is not used by any other application on the computer.
+After you have set all the required files and folders, add `.env` file to the root (LocalShareHub) directory. In the file give port no. as shown in `.env.sample` file. If you don't configure then by *default the PORT no. is* `3000`. Make sure the port you mention is not used by any other application on the computer.
 
 ```ini
 PORT=9999
 ```
+
 It should look something like:
 <p align="center"><img src="assets/ssenv.png" alt="screenshot of env file"></p>
 
