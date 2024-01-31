@@ -27,7 +27,12 @@ npm install
 ### Via GitHub
 
 1. Visit https://github.com/Axwaizee/LocalShareHub.
-2. Click on the **Code** button then **Download Zip**. <p align="center">![Download Zip](assets/ssdownload.png)</p>
+2. Click on the **Code** button then **Download Zip**.
+
+<p align="center">
+    <img src="assets/ssdownload.png" alt="Download Zip">
+</p>
+
 3. Extract the downloaded zip file to any directory you prefer.
 4. Open Terminal / Command Prompt at that Directory.
 5. Run `npm install` in the terminal.
