@@ -11,6 +11,8 @@ const io = new socketIO.Server(server, {
 });
 const PORT = process.env.PORT || 3000;
 
+let latestText = "";
+
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get('/', (req, res) => {
@@ -21,9 +23,12 @@ app.get('/', (req, res) => {
 io.on('connection', (socket) => {
     console.log('a user connected');
 
+    socket.emit('updatedText', latestText);
+
     socket.on('updateText', (text) => {
+        latestText = text;
         io.emit('updatedText', text);
-    })
+    });
 
     socket.on('disconnect', () => {
         console.log('user disconnected');
