@@ -28,18 +28,18 @@ app.get('/', (req, res) => {
 
 
 io.on('connection', (socket) => {
-    console.log(`\x1b[93m[${formatDateTime()}] \x1b[92mA user connected from IP: ${socket.handshake.address}\x1b[0m`);
+    console.log(`\x1b[93m[${formatDateTime()}]\x1b[0m \x1b[92mA user connected from IP: ${socket.handshake.address}\x1b[0m`);
 
     socket.emit('updatedText', latestText);
 
     socket.on('updateText', (text) => {
         latestText = text;
-        console.log(`\x1b[93m[${formatDateTime()}] \x1b[94mText was updated from IP: ${socket.handshake.address}\x1b[0m`);
+        console.log(`\x1b[93m[${formatDateTime()}]\x1b[0m \x1b[94mText was updated from IP: ${socket.handshake.address}\x1b[0m`);
         io.emit('updatedText', text);
     });
 
     socket.on('disconnect', () => {
-        console.log(`\x1b[93m[${formatDateTime()}] \x1b[91mUser disconnected from IP: ${socket.handshake.address}\x1b[0m`);
+        console.log(`\x1b[93m[${formatDateTime()}]\x1b[0m \x1b[91mUser disconnected from IP: ${socket.handshake.address}\x1b[0m`);
     });
 });
 
